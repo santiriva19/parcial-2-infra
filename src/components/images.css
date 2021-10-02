@@ -24,3 +24,6 @@
     overflow: hidden !important;
     justify-content: center !important;
 }
+.carousel .slider-wrapper.axis-horizontal .slider{
+    align-items: center !important;
+}

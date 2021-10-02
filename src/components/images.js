@@ -1,9 +1,8 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useEffect } from 'react';
-import './images.module.css';
+import './images.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import classes from './images.module.css';
 import slideImages from '../assets/json/json.json'
 import axios from 'axios';
 export default function ImagesSlider(){
@@ -17,15 +16,12 @@ export default function ImagesSlider(){
         })
     }, [])
     return(
-        <div className={classes["container"]}>
-            <div className={classes["img_container"]}>
+        <div className={"container"}>
+            <div className={"img_container"}>
                 <Carousel>
                     {slideImages.map((element) => {
                         return(
-                            <div>
-                                <img src={element.url} />
-                                <p className="legend">{element.caption}</p>
-                            </div>
+                            <img src={element.url} />
                         )
                     })}
                 </Carousel>
