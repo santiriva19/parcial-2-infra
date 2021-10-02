@@ -1,0 +1,26 @@
+.container{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+.img_container{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 70%;
+}
+.carousel-root{
+    width: 100% !important;
+}
+.carousel .thumbs{
+    margin: 0 !important;
+}
+.carousel .thumbs-wrapper{
+    display: flex !important;
+    overflow: hidden !important;
+    justify-content: center !important;
+}
